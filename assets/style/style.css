@@ -165,10 +165,10 @@
       margin: 0 1px;
     }
     
-    .blue { background: #1BCED8;}
-    .orange { background: #1BCED8}
-    .green { background: #1BCED8;}
-    .yellow { background: #1BCED8;}
+    .blue { background: #fff;}
+    .orange { background: #fff}
+    .green { background: #fff;}
+    .yellow { background: #fff;}
     
     .details {
       position: relative;
@@ -269,6 +269,7 @@
       background: #4f008c;
       line-height: 30px;
       color: #fff;
+      display: none;
     
     }
     
