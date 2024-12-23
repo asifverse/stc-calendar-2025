@@ -291,10 +291,10 @@
       left: 14px;
     }
     
-    .entry.blue:after { background: rgba(156, 202, 235, 1); }
-    .entry.orange:after { background: rgba(247, 167, 0, 1); }
-    .entry.green:after { background: rgba(153, 198, 109, 1); }
-    .entry.yellow:after { background: rgba(249, 233, 0, 1); }
+    .entry.blue:after { background: #fff ; }
+    .entry.orange:after { background: #fff ; }
+    .entry.green:after { background: #fff ; }
+    .entry.yellow:after { background: #fff ; }
     
     /* Animations are cool!  */
     @-webkit-keyframes moveFromTopFade {
