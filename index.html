@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>stc Calendar of events 2025</title>
     <link href="assets/style/style.css" rel="stylesheet">
     <link href="assets/style/font.css" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    <div id="loader" class="spinner-border text-primary center" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <script>
+                document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
     <div class="container">
         <div class="headerContent">
             <div class="row">
@@ -92,7 +110,7 @@
                 subtitle: "Bring May Flowers",
                 image: "assets/media/Digital_Calender_Post.gif"
             },
-            july: {
+            July: {
                 title: "Integrating ESG values to achieve long-term positive impact",
                 subtitle: "Bring May Flowers",
                 image: "assets/media/Digital_Calender_Post.gif"
@@ -192,14 +210,14 @@
         };
 
         Calendar.prototype.nextMonth = function () {
-            this.current.add(1, 'months');
+            this.current.add('months', 1);
             this.next = true;
             this.draw();
             this.updateMonthDetails();
         };
 
         Calendar.prototype.prevMonth = function () {
-            this.current.subtract(1, 'months');
+            this.current.subtract('months',1);
             this.next = false;
             this.draw();
             this.updateMonthDetails();
@@ -457,32 +475,31 @@
 
     !function() {
     var data = [
-      { eventName: 'New Year Holiday', calendar: 'Public Holiday', color: 'orange', date: moment('2025-01-01') },
-      { eventName: 'Lunch Meeting w/ Mark', calendar: 'Work', color: 'orange', date: moment('2025-01-05') },
-      { eventName: 'Interview - Jr. Web Developer', calendar: 'Work', color: 'orange', date: moment('2025-01-15') },
-      { eventName: 'Demo New App to the Board', calendar: 'Work', color: 'orange', date: moment('2025-01-20') },
-      { eventName: 'Dinner w/ Marketing', calendar: 'Work', color: 'orange', date: moment('2025-01-25') },
-    
-      { eventName: 'Game vs Portland', calendar: 'Sports', color: 'blue', date: moment('2025-02-05') },
-      { eventName: 'Game vs Houston', calendar: 'Sports', color: 'blue', date: moment('2025-02-10') },
-      { eventName: 'Game vs Denver', calendar: 'Sports', color: 'blue', date: moment('2025-02-15') },
-      { eventName: 'Game vs San Diego', calendar: 'Sports', color: 'blue', date: moment('2025-02-20') },
-    
-      { eventName: 'School Play', calendar: 'Kids', color: 'yellow', date: moment('2025-03-01') },
-      { eventName: 'Parent/Teacher Conference', calendar: 'Kids', color: 'yellow', date: moment('2025-03-05') },
-      { eventName: 'Pick up from Soccer Practice', calendar: 'Kids', color: 'yellow', date: moment('2025-03-10') },
-      { eventName: 'Ice Cream Night', calendar: 'Kids', color: 'yellow', date: moment('2025-03-15') },
-    
-      { eventName: 'Free Tamale Night', calendar: 'Other', color: 'green', date: moment('2025-04-01') },
-      { eventName: 'Bowling Team', calendar: 'Other', color: 'green', date: moment('2025-04-05') },
-      { eventName: 'Teach Kids to Code', calendar: 'Other', color: 'green', date: moment('2025-04-10') },
-      { eventName: 'Startup Weekend', calendar: 'Other', color: 'green', date: moment('2025-04-20') }
+      { eventName: 'New Year’s Day', calendar: 'Public Holiday', color: 'orange', date: moment('2025-01-01') },
+      { eventName: 'Isra and Mi’raj', calendar: 'Public Holiday', color: 'orange', date: moment('2025-01-30') },
+
+      { eventName: 'National Day', calendar: 'Public Holiday', color: 'orange', date: moment('2025-02-25') },
+      { eventName: 'Liberation Day', calendar: 'Public Holiday', color: 'orange', date: moment('2025-02-26') },
+
+      { eventName: 'Eid Al Fitr', calendar: 'Public Holiday', color: 'blue', date: moment('2025-03-30') },
+      { eventName: 'Eid Al Fitr', calendar: 'Public Holiday', color: 'blue', date: moment('2025-03-31') },
+
+      { eventName: 'Eid Al Fitr', calendar: 'Public Holiday', color: 'blue', date: moment('2025-04-01') },
+
+      { eventName: 'Arafat Day', calendar: 'Public Holiday', color: 'blue', date: moment('2025-06-05') },
+      { eventName: 'Eid Al Adha', calendar: 'Public Holiday', color: 'blue', date: moment('2025-06-06') },
+      { eventName: 'Eid Al Adha', calendar: 'Public Holiday', color: 'blue', date: moment('2025-06-07') },
+      { eventName: 'Eid Al Adha', calendar: 'Public Holiday', color: 'blue', date: moment('2025-06-08') },
+      { eventName: 'Hirji New Year', calendar: 'Public Holiday', color: 'blue', date: moment('2025-06-26') },
+
+      { eventName: 'Prophet’s Birthday', calendar: 'Public Holiday', color: 'blue', date: moment('2025-09-04') },
+
+      { eventName: 'Prophet’s Birthday', calendar: 'Public Holiday', color: 'blue', date: moment('2025-09-04') },
     ];
   
     function addDate(ev) {
       
     }
-
         var calendar = new Calendar('#calendar', data);
     }();
 </script>
