@@ -165,15 +165,15 @@
       margin: 0 1px;
     }
     
-    .blue { background: #fff;}
-    .orange { background: #fff}
-    .green { background: #fff;}
-    .yellow { background: #fff;}
+    .blue { background: #ff375e;}
+    .orange { background: #ff375e}
+    .green { background: #ff375e;}
+    .yellow { background: #ff375e;}
     
     .details {
       position: relative;
       width: 420px;
-      height: 75px;
+      height: 50px;
       background: #ff375e;
       margin-top: 5px;
       border-radius: 4px;
@@ -206,7 +206,7 @@
     }
     
     .events {
-      height: 75px;
+      height: 50px;
       padding: 7px 0;
       overflow-y: auto;
       overflow-x: hidden;
@@ -291,10 +291,10 @@
       left: 14px;
     }
     
-    .entry.blue:after { background: #fff ; }
-    .entry.orange:after { background: #fff ; }
-    .entry.green:after { background: #fff ; }
-    .entry.yellow:after { background: #fff ; }
+    .entry.blue:after { background: #ff375e ; }
+    .entry.orange:after { background: #ff375e ; }
+    .entry.green:after { background: #ff375e ; }
+    .entry.yellow:after { background: #ff375e ; }
     
     /* Animations are cool!  */
     @-webkit-keyframes moveFromTopFade {
@@ -434,3 +434,24 @@
       width: 450px;
     }
   }
+
+  .text-primary{
+    color: #ff375e !important;
+  }
+
+  .spinner-border{
+    width: 8rem !important;
+    height: 8rem !important;
+    border: .35em solid #ff375e !important;
+    border-right-color: transparent !important;
+  }
+
+  .center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+}
