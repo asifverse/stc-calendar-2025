@@ -206,7 +206,7 @@
     }
     
     .events {
-      height: 50px;
+      height: 60px;
       padding: 7px 0;
       overflow-y: auto;
       overflow-x: hidden;
@@ -235,12 +235,12 @@
       -moz-animation: fadeOut .3s ease both;
       animation: fadeOut .3s ease both;
     }
-    
+
     .event {
       font-size: 14px;
       line-height: 22px;
       letter-spacing: .5px;
-      padding: 2px 16px;
+      padding: 8px 8px;
       vertical-align: top;
     }
     
@@ -270,7 +270,6 @@
       line-height: 30px;
       color: #fff;
       display: none;
-    
     }
     
     .entry {
