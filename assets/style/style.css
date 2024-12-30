@@ -35,6 +35,7 @@
       position:relative;
       z-index: 100;
       color: #fff;
+      margin-bottom: 15px;
     }
     
     .header h1 {
@@ -426,11 +427,22 @@
   }
 
   @media only screen and (max-width: 600px) {
+    
     #calendar{
       margin-top: 0rem;
     }
     .digitalCalendar img {
-      width: 450px;
+      width: 400px;
+    }
+    .iframe-container .container{
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .header{
+      width: 390px !important;
+    }
+    .day{
+      width: 55px !important;
     }
   }
 
