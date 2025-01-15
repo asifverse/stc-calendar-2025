@@ -434,11 +434,18 @@
     
     #calendar{
       margin-top: 0rem;
+      width: 350px !important;
     }
+
+    .digitalCalendar{
+      text-align: center;
+    }
+
     .digitalCalendar img {
-      width: 350px;
+      width: 325px;
     }
-    .iframe-container .container{
+
+    .container{
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
