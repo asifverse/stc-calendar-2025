@@ -427,6 +427,10 @@
   }
 
   @media only screen and (max-width: 600px) {
+
+    body{
+      overflow-x: hidden !important;
+    }
     
     #calendar{
       margin-top: 0rem;
