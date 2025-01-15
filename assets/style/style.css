@@ -432,17 +432,18 @@
       margin-top: 0rem;
     }
     .digitalCalendar img {
-      width: 400px;
+      width: 350px;
     }
     .iframe-container .container{
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
     .header{
-      width: 390px !important;
+      width: 350px !important;
     }
     .day{
-      width: 55px !important;
+      width: 50px !important;
+      padding: 8px;
     }
   }
 
